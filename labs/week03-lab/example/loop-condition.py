@@ -9,6 +9,15 @@
 # demo_for_basic.py
 print("=== Demo 1: Basic For Loop ===")
 
+print(range(5)) # [0,1,2,3,4] 
+print(range(1, 5))# [1,2,3,4]
+print(range(1, 5, 2))# [1,3]
+print(range(1, 0, 1))
+
+
+list = [1,2,3]
+list += [4,5]
+
 # Loop ผ่านตัวเลข
 print("นับจาก 1 ถึง 5:")
 for i in range(1, 6):
@@ -62,11 +71,11 @@ print("=== Demo 3: Loops + Conditions ===")
 
 # หาเลขคู่และคี่
 print("แยกเลขคู่-คี่:")
-for num in range(1, 11):
+for num in range [1,11]:
     if num % 2 == 0:
-        print(f"{num} เป็นเลขคู่")
+      print(f"{num}[เป็นคู่]")
     else:
-        print(f"{num} เป็นเลขคี่")
+        print(f"{num}[เป็นคี่]")
 
 print("\nDemo เกมทายตัวเลข (จำลอง):")
 import random
