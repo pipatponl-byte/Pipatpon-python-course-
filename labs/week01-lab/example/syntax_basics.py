@@ -23,11 +23,6 @@ my_integer = 42
 my_float = 3.14
 my_boolean = False
 
-# Use type() to see the data type
-print("Type of my_string:", type(my_string))
-print("Type of my_integer:", type(my_integer))
-print("Type of my_float:", type(my_float))
-print("Type of my_boolean:", type(my_boolean))
 
 # Exercise 3: String Operations
 first_name = "John"
@@ -80,7 +75,11 @@ print("a =", a, "b =", b, "c =", c)
 favorite_color = "Black"
 
 # Integer variable with the current year
+<<<<<<< HEAD
+current_year = 2569
+=======
 current_year = 2026
+>>>>>>> 2fefbf692069881a40d47582d445d11822f18945
 
 # Float variable with your favorite number (with decimal)
 favorite_number = 10
