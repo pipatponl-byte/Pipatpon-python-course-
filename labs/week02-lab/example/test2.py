@@ -8,3 +8,6 @@ height = float(input("Enter your height: ")*2)
 BMI = weight / (height ** 2)
 print("Your BMI: ",BMI)
 
+
+
+
