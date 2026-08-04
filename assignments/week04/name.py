@@ -1,5 +1,5 @@
 name = input("What is your name: ")
-name = "pipatpon"
+name = "Pipatpon"
 letters = list(name)
 print(letters)
 counter = 0
@@ -8,6 +8,7 @@ for char in letters:
     if char =='a' or char =='A':
         counter = counter + 1
         print('a')
+        
 
     if char =='e' or char =='E':
         counter = counter + 1
@@ -32,9 +33,6 @@ o = letters.count('O')
 u = letters.count('U')
 
 vowel = a + e + i + o + u
-
-
-
 
 
 
