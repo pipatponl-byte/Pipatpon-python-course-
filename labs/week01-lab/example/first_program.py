@@ -7,6 +7,9 @@ print("Hello, World!")
 print("My name is Your Name")
 print("How old are you")
 print("sleep")
+print("play game")
+
+
 
 # Exercise 3: Multiple Print Statements
 # Write three print statements that display:
@@ -36,11 +39,11 @@ print("Third", "line", "with", "multiple", "arguments")
 # Exercise 6: Comments Practice
 # Add comments above each print statement explaining what it does
 
-# 
+#
 print("Welcome to Python programming!")
 
-# 
+#
 print("Python is fun!")
 
-# 
+#
 print("I am learning to code!")

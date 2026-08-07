@@ -56,7 +56,7 @@ print("The sum of", num1, "and", num2, "is", result)
 print("\n=== Exercise 6: Personal Information ===")
 # Create a program that asks for and displays:
 # - Name
-# - Age  
+# - Age
 # - Favorite color
 # - Hometown
 # Then display all information in a nice format

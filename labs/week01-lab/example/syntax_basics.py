@@ -75,11 +75,10 @@ print("a =", a, "b =", b, "c =", c)
 favorite_color = "Black"
 
 # Integer variable with the current year
-<<<<<<< HEAD
 current_year = 2569
-=======
+
 current_year = 2026
->>>>>>> 2fefbf692069881a40d47582d445d11822f18945
+
 
 # Float variable with your favorite number (with decimal)
 favorite_number = 10
