@@ -115,6 +115,8 @@ def square(n):
 print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
+
+print(f"square root of 25 =", square(25))
 print()
 
 # =============================================================================
