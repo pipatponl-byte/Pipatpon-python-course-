@@ -106,7 +106,8 @@ print()
 # Example 3: Using returned values in expressions
 def multiply(x, y):
     """Multiplies two numbers"""
-    return x * y
+    result x * y
+    return result
 
 def square(n):
     """Returns the square of a number"""
@@ -125,7 +126,7 @@ print()
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
 # Example 1: Function with default parameter
-def greet_with_title(name, title="Mr./Ms."):
+def greet_with_title(name, title="Mr./Ms."):  #ทักทายด้วยคำนำหน้าชื่อ
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")
 
