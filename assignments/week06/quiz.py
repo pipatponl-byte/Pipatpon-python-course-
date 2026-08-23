@@ -28,9 +28,17 @@ return string ที่จัดรูปแบบข้อมูลผู้ใ
 
 """
 
-def create_user_profile(username, age=18, premium=False):
+def create_user_profile(username, age=18, premium=True):
     # Your Problem 3 solution
-    pass
+    if premium == True:
+    
+         return(f"Profile: {username}, Age: {age}, Premium{premium}")
+    else :
+        return(f"Profile: {username}, Age: {age}, Premium{premium}")
+
+print(create_user_profile("Pipatpon",20))
+print(create_user_profile("Pond"))
+print(create_user_profile("Pos",19,True))
 
 """ เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
 
