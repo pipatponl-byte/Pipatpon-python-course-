@@ -7,6 +7,7 @@ def calculate_tax(tax):
         total_tax = step7 + 7500 + 20000 + 37500 + 50000 + 250000 + 900000
         final_income = tax - step7 - 7500 - 20000 - 37500 - 50000 - 250000 - 900000
         effective_rate = total_tax / tax * 100
+
         print("รายละเอียดภาษี")
         print("           0 -    150,000: 0.0 บาท")
         print("     150,000 -    300,000:", 7500.0, "บาท")
@@ -17,6 +18,7 @@ def calculate_tax(tax):
         print("   2,000,000 -  5,000,000:", 900000.0, "บาท")
         print("   5,000,000 -     ขึ้นไป:", step7, "บาท")
         print()
+        
         print("เสียภาษีขั้น 5,000,000 ขึ้นไป (35%) เป็นเงิน", step7)
         print("ภาษีรวมทั้งหมด", total_tax)
         print("รายได้หลังหักภาษี",final_income,"บาท")
@@ -28,6 +30,7 @@ def calculate_tax(tax):
         total_tax = step6 + 7500 + 20000 + 37500 + 50000 + 250000
         final_income = tax - step6 - 7500 - 20000 - 37500 - 50000 - 250000
         effective_rate = total_tax / tax * 100
+
         print("รายละเอียดภาษี")
         print("           0 -    150,000: 0.0 บาท")
         print("     150,000 -    300,000:", 7500.0, "บาท")
@@ -37,6 +40,8 @@ def calculate_tax(tax):
         print("   1,000,000 -  2,000,000:", 250000.0, "บาท")
         print("   2,000,000 -  5,000,000:", step6, "บาท")
         print("   5,000,000 -     ขึ้นไป: 0.0 บาท")
+        print()
+
         print("เสียภาษีขั้น 2,000,000 - 5,000,000 (30%) เป็นเงิน", step6)
         print("ภาษีรวมทั้งหมด", total_tax)
         print("รายได้หลังหักภาษี",final_income,"บาท")
