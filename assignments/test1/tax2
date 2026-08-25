@@ -18,7 +18,7 @@ def calculate_tax(tax):
         print("   2,000,000 -  5,000,000:", 900000.0, "บาท")
         print("   5,000,000 -     ขึ้นไป:", step7, "บาท")
         print()
-        
+
         print("เสียภาษีขั้น 5,000,000 ขึ้นไป (35%) เป็นเงิน", step7)
         print("ภาษีรวมทั้งหมด", total_tax)
         print("รายได้หลังหักภาษี",final_income,"บาท")
@@ -64,7 +64,7 @@ def calculate_tax(tax):
         print("   2,000,000 -  5,000,000: 0.0 บาท")
         print("   5,000,000 -     ขึ้นไป: 0.0 บาท")
         print()
-
+        
         print("เสียภาษีขั้น 1,000,000 - 2,000,000 (25%) เป็นเงิน", step5)
         print("ภาษีรวมทั้งหมด", total_tax)
         print("รายได้หลังหักภาษี",final_income,"บาท")
@@ -155,7 +155,7 @@ def calculate_tax(tax):
         print("   2,000,000 -  5,000,000: 0.0 บาท")
         print("   5,000,000 -     ขึ้นไป: 0.0 บาท")
         print()
-        
+
         print("เสียภาษีขั้น 150,000 - 300,000 (5%) เป็นเงิน", total_tax)
         print("ภาษีรวมทั้งหมด", total_tax)
         print("รายได้หลังหักภาษี",final_income,"บาท")
@@ -167,8 +167,24 @@ def calculate_tax(tax):
         print("เสียภาษี 0% เป็นเงิน", total_tax)
         return total_tax, tax, 0
 
-    
-tax = float(input("Enter your tax: "))
-calculate_tax(tax)
+print("=== โปรแกรมคำนวณภาษี ===")
+print("1. คำนวณภาษีคนเดียว")
+print("2. คำนวณภาษีหลายคน")
+choice = input("เลือกเมนู (1 หรือ 2): ")
 
+if choice == "1":
+    tax = float(input("Enter your tax: "))
+    calculate_tax(tax)
 
+elif choice == "2":
+    n = int(input("คำนวณกี่คน: "))
+    results = []
+
+    for i in range(1, n + 1):
+        print(f"\n--- คนที่ {i} ---")
+        tax = float(input("Enter your tax: "))
+        total_tax, final_income, effective_rate = calculate_tax(tax)
+        results.append((i, tax, total_tax, final_income, effective_rate))
+
+else:
+    print("เลือก 1 หรือ 2 เท่านั้น: ")
