@@ -119,6 +119,8 @@ print("\n=== MEMBERSHIP TEST ===")
 print("'a' in 'program':", 'a' in 'program')  # True
 print("'at' not in 'battle':", 'at' not in 'battle')  # False
 
+# output = 'a' in prigram:True, 'at' not in 'bettle':False
+
 # ===========================
 # 9. STRING IMMUTABILITY 
 # ===========================
@@ -146,13 +148,13 @@ print(f"id of str3 is {id(str3)}")  # Same ID as current str1
 
 print("\n=== ESCAPE CHARACTERS ===")
 print("New line example:")
-print("Line 1\nLine 2")
+print("Line 1\nLine 2")  #output = Line1, Line2 ขึ้นบรรทัดใหม่่                        
 
 print("Tab example:")
-print("Column1\tColumn2\tColumn3")
+print("Column1\tColumn2\tColumn3")  #output = Column1, Column2, Column3
 
 print("Backslash example:")
-print("Path: C:\\Users\\Python")
+print("Path: C:\\Users\\Python")  
 
 print("Quote examples:")
 print('He said, "What\'s there?"')
@@ -185,9 +187,11 @@ sal = 20000
 
 # Different format styles
 str1 = '{},{},{}'.format(id_num, name, sal)
+str1 = f'{id_num}, {name}, {sal}'
 print(str1)  # 10,shankar,20000
 
 str2 = '{} - {} - {}'.format(id_num, name, sal)
+str2 = f'{id_num} - {name} -  {sal}'
 print(str2)  # 10 - shankar - 20000
 
 str3 = 'id={}\nname={}\nsal={}'.format(id_num, name, sal)
@@ -205,28 +209,28 @@ print(f"Original: {text}")
 print(f"Upper: {text.upper()}")
 print(f"Lower: {text.lower()}")
 print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Capitalize: {text.capitalize()}")  #Capitalize = การให้ตัวอักษรทุกตัวเป็นตัวพิมพ์ใหญ่
 
 # Search methods
 print(f"Find 'world': {text.find('world')}")
-print(f"Count 'o': {text.count('o')}")
+print(f"Count 'o': {text.count('o')}")  #output = นับจำนวนตัวoที่อยู่ในข้อความ
 print(f"Starts with 'welcome': {text.startswith('welcome')}")
 print(f"Ends with 'python': {text.endswith('python')}")
 
 # Modification methods
-print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}") #replace = การเปลี่ยนคำ
 words = text.split()
 print(f"Split into words: {words}")
-print(f"Join with '-': {'-'.join(words)}")
+print(f"Join with '-': {'-'.join(words)}")  #output = welcom-to-the-world-of-ptpyhon
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}")  #T
+print(f"isalpha(): {test_str.isalpha()}")  #F
+print(f"isdigit(): {test_str.isdigit()}")  #F
+print(f"isupper(): {test_str.isupper()}")  #F
+print(f"islower(): {test_str.islower()}")  #F
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
