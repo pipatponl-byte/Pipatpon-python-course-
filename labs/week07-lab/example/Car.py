@@ -27,6 +27,7 @@ class Car:
 # Creating instances
 car1 = Car("Toyota", "Camry", 2022)
 car2 = Car("Honda", "Civic", 2021)
+car3 = Car("Ford", "Mustang",2025)
 
 # Accessing class attributes
 print(f"All cars have {Car.wheels} wheels")

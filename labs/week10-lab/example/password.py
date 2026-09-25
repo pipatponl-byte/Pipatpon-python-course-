@@ -1,16 +1,9 @@
-# เขียนโปรแกรม ตรวจสอบความแข็งแรงของ password
-# password ที่แข็งแรง และยาวมากว่า8 ตัว และผสมกันระหว่าตัวเลข ตัวอักษร และอักขระพิเศษ
+class Student:
+    def _init_(s,sn,ls,tel1,brh):
+    self.sname = sn
+    self.lname = ls
+    self.tel = tell
+    self.birhtday = bh
 
-# ตัวอย่างหน้าจอ
-# Insert your password: Test123
-# Your password is not storng
+    
 
-
-password = input("Insert your password: ")
-lenght = len(password)
-check = password.isalnum()
-
-if lenght > 8 and check == False:
-    print("Your password is storng! ")
-else:
-    print("Your password is not strong! ")
